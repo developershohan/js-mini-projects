@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;flex-direction: column;
+    gap: 2rem;
+}
+.faq_item{
+    overflow: hidden;
+}
+.faq_question{
+    background-color: aqua;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+.faq_content{
+    background-color: darkcyan;
+    color: aliceblue;
+    padding: 10px;
+    transform: translateY(-150px);
+    display: none;
+    z-index: 0;
+    transition: all .3s ease-in-out;
+}
+.faq_content.active{
+        transform: translateY(0);
+        display: flex;
+
+    }
+    .close_btn{
+        display: none;
+    }

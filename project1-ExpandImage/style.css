@@ -1,0 +1,32 @@
+.container {
+  width: 100vw;
+}
+.panels {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.panel{
+    position: relative;
+    display: flex;
+    flex: .2;
+    cursor: pointer;
+    transition: all .7s ease-in-out;
+}
+.panel img {
+  width: 100%;
+  position: relative;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 50px;
+}
+.panel h3 {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font-size: 24px;
+  color: aliceblue;
+}
+.panel.active{
+    flex: 5;
+}

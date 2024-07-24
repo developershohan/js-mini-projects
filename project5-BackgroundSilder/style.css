@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 350px;
+    overflow: hidden;
+}
+.image_container{
+    display: flex;
+    transform: translateX(0);
+    transition: transform .3s ease-in;
+
+}
+.imgs{
+    width: 350px;
+    height: 250px;
+    object-fit: cover;
+}
+.dots{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .3rem;
+}
+.dot{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: aqua;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+
+}
+.dot.active{
+    width: 15px;
+    height: 15px;
+    background-color: black;
+}
